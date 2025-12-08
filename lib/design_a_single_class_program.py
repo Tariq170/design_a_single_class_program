@@ -8,7 +8,7 @@ class TodoList:
     def incomplete(self):
         return self.tasks
 
-    def mark_as_complete(slef, index):
+    def mark_as_complete(self, index):
         if index < 0 or index >= len(self.tasks):
             raise Exception("no task available to mark as complete")
         del self.tasks[index]
